@@ -6,7 +6,7 @@ import javax.persistence.*;
 @Table(name = "Empleado")
 public class Empleado {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)//Se quito la serializacion de la id en la base de datos
     private int id;
     private String nombre;
     private String correo;
